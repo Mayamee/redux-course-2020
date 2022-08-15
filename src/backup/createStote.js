@@ -13,6 +13,7 @@ export function createStore(rootReducer, initialState) {
       // callback - функция, которая будет вызвана при dispatch
       subscribers.push(callback);
     },
+    // возвращает текущее состояние
     getState() {
       return state;
     },
